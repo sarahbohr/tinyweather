@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A little weather app</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  </head>
+  <body>
+      <nav class="navbar fixed-top navbar-dark bg-dark">
+          <div class="navbar-brand">Tiny Weather</div>
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="http://github.com/sarahbattey" target="_blank">GitHub</a>
+              </li>
+            </ul>
+        </nav>
+    <div class="container">
+        <form action="/" method="post">
+          <div class="form-group">
+            <input class="form-control form-control-lg" type="text" name="city" placeholder="Enter a City" required>
+          </div>
+          <div class="form-group">
+              <button type="submit" class="btn btn-secondary btn-lg btn-block">What's the weather like?</button>
+          </div>
+          <div class="form-group">
+              <% if(weather !== null){ %>
+                <p><%= weather %></p>
+              <% } %>
+      
+              <% if(error !== null){ %>
+                <p><%= error %></p>
+              <% } %>
+          </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

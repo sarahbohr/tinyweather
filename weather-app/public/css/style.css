@@ -1,0 +1,49 @@
+body {
+  width: 100vw;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  width: 50vw;
+  margin: 25vh 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+fieldset {
+  display: block;
+}
+.ghost-input {
+  display: block;
+  font-weight: 300;
+  font-size: 2vw;
+  border: 0px;
+  outline: none;
+  width: 30vw;
+  color: #4b545f;
+  background: #fff;
+  font-family: Open Sans,Verdana;
+  padding: 10px 15px;
+  margin: 30px 0px;
+  transition: all 0.1s ease-in-out;
+}
+.ghost-input:focus {
+  border-bottom: 1px solid #ddd;
+}
+.ghost-button {
+  background-color: transparent;
+  border: 2px solid #ddd;
+  padding: 2vh 2vw;
+  width: 30vw;
+  transition: all 0.1s ease-in-out;
+  display: block;
+}
+.ghost-button:hover {
+  border: 2px solid #515151;
+}
+p {
+  color: #333;
+  /* width: 20vw; */
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
